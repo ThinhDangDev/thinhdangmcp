@@ -4,13 +4,6 @@
   "description": "MCP server for Thinh Dang",
   "license": "MIT",
   "mcpName": "thinhdangmcp",
-  "author": "Thinh Dang (https://thinhdang.com)",
-  "homepage": "https://thinhdang.com",
-  "bugs": "https://github.com/thinhdang/thinhdangmcp/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thinhdang/thinhdangmcp.git"
-  },
   "type": "module",
   "bin": {
     "thinhdangmcp": "dist/index.js"
@@ -40,6 +33,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/node": "^25.0.3",
     "prettier": "^2.8.8",
     "shx": "^0.3.4",
     "typescript": "^5.6.2"
