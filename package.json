@@ -1,15 +1,35 @@
 {
-  "name": "thinhdangmcp",
+  "name": "@thinhdang1402/thinhdangmcp",
   "version": "1.0.0",
-  "description": "MCP server for Thinh Dang",
+  "description": "MCP server with stdio, SSE, and StreamableHttp transports - demo implementation",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Thinh Dang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thinhdangdev/thinhdangmcp.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "stdio",
+    "sse",
+    "streamablehttp"
+  ],
   "mcpName": "thinhdangmcp",
   "type": "module",
   "bin": {
     "thinhdangmcp": "dist/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc && shx cp -r docs dist/ && shx chmod +x dist/*.js",
@@ -17,7 +37,7 @@
     "watch": "tsc --watch",
     "start:stdio": "node dist/index.js stdio",
     "start:sse": "node dist/index.js sse",
-    "start:streamableHttp": "node dist/index.js streamableHttp",
+    "start:http": "node dist/index.js streamableHttp",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check ."
   },
@@ -27,6 +47,7 @@
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "jszip": "^3.10.1",
+    "telegraf": "^4.16.3",
     "zod": "^3.25.0",
     "zod-to-json-schema": "^3.23.5"
   },

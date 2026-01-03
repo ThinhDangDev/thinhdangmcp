@@ -3,12 +3,14 @@
     "target": "ES2022",
     "module": "Node16",
     "moduleResolution": "Node16",
+    "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./types"]
   },
-  "include": ["index.ts"],
-  "exclude": ["node_modules"]
+  "include": ["index.ts", "types/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

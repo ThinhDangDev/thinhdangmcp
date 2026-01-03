@@ -14,6 +14,9 @@ import { registerToggleSubscriberUpdatesTool } from "./toggle-subscriber-updates
 import { registerTriggerElicitationRequestTool } from "./trigger-elicitation-request.js";
 import { registerTriggerLongRunningOperationTool } from "./trigger-long-running-operation.js";
 import { registerTriggerSamplingRequestTool } from "./trigger-sampling-request.js";
+import { registerTelegramCollectMessagesTool } from "./telegram-collect-messages.js";
+import { registerTelegramListChatsTool } from "./telegram-list-chats.js";
+import { registerTelegramStartListeningTool } from "./telegram-start-listening.js";
 
 /**
  * Register the tools with the MCP server.
@@ -32,6 +35,9 @@ export const registerTools = (server: McpServer) => {
   registerToggleSimulatedLoggingTool(server);
   registerToggleSubscriberUpdatesTool(server);
   registerTriggerLongRunningOperationTool(server);
+  registerTelegramCollectMessagesTool(server);
+  registerTelegramListChatsTool(server);
+  registerTelegramStartListeningTool(server);
 };
 
 /**
